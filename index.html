@@ -24,7 +24,72 @@
         <section class="menu">
 
             <button onclick="showSection('rooms')">
-                🏠 Rooms / Tenants onclick="showSection('rent')">
+                🏠 Rooms / Tenants <!-- Rooms / Tenants -->
+<section id="rooms" class="app-section">
+
+    <h2>🏠 Rooms / Tenants</h2>
+
+    <p>Add and manage your rooms and tenants.</p>
+
+    <!-- Add Tenant Form -->
+    <form id="tenantForm">
+
+        <div class="form-group">
+            <label for="room">Room Number</label>
+            <input type="text" id="room" placeholder="e.g. 6" required>
+        </div>
+
+        <div class="form-group">
+            <label for="tenant">Tenant Name</label>
+            <input type="text" id="tenant" placeholder="e.g. Jane Kamau" required>
+        </div>
+
+        <div class="form-group">
+            <label for="rent">Monthly Rent ($)</label>
+            <input type="number" id="rent" placeholder="e.g. 7500" min="0" required>
+        </div>
+
+        <div class="form-group">
+            <label for="paid">Amount Paid ($)</label>
+            <input type="number" id="paid" placeholder="e.g. 6500" min="0" required>
+        </div>
+
+        <button type="submit">
+            ➕ Add Tenant
+        </button>
+
+    </form>
+
+
+    <!-- Tenant Records -->
+    <h3>Tenant Records</h3>
+
+    <div class="table-container">
+
+        <table id="tenantTable">
+
+            <thead>
+                <tr>
+                    <th>Room</th>
+                    <th>Tenant</th>
+                    <th>Rent</th>
+                    <th>Paid</th>
+                    <th>Balance</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="tenantTableBody">
+
+                <!-- Tenant records will appear here -->
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section> onclick="showSection('rent')">
                 💰 Rent Payments
             </button>
 
