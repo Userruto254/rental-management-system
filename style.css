@@ -1,0 +1,151 @@
+/* ==============================
+   RENTAL MANAGEMENT SYSTEM
+   Main Styling
+   ============================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #1f4e78;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* Main area */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Menu buttons */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.menu button {
+    background: white;
+    border: none;
+    border-radius: 10px;
+    padding: 18px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1f4e78;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.menu button:hover {
+    background: #1f4e78;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Application sections */
+.app-section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.app-section h2 {
+    color: #1f4e78;
+    margin-bottom: 10px;
+}
+
+.app-section p {
+    margin-bottom: 15px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+th {
+    background: #1f4e78;
+    color: white;
+    padding: 13px;
+    text-align: left;
+}
+
+td {
+    padding: 13px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background: #f1f5f9;
+}
+
+/* Water rate highlight */
+strong {
+    color: #1f4e78;
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 0 12px;
+        margin-top: 20px;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    .menu button {
+        padding: 16px;
+    }
+
+    .app-section {
+        padding: 18px;
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px;
+    }
+}
