@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rental Management System</title>
+
+    <!-- Our design file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main Header -->
+    <header>
+        <h1>🏠 Rental Management System</h1>
+        <p>Manage rooms, tenants, rent and water bills</p>
+    </header>
+
+    <!-- Main Navigation -->
+    <main>
+
+        <section class="menu">
+
+            <button onclick="showSection('rooms')">
+                🏠 Rooms / Tenants
+            </button>
+
+            <button onclick="showSection('rent')">
+                💰 Rent Payments
+            </button>
+
+            <button onclick="showSection('water')">
+                💧 Water Bills
+            </button>
+
+            <button onclick="showSection('status')">
+                🔔 Payment Status
+            </button>
+
+            <button onclick="showSection('reports')">
+                📊 Reports
+            </button>
+
+        </section>
+
+        <!-- Rooms / Tenants -->
+        <section id="rooms" class="app-section">
+            <h2>🏠 Rooms / Tenants</h2>
+
+            <p>Add and manage your rooms and tenants.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Room</th>
+                        <th>Tenant</th>
+                        <th>Rent</th>
+                        <th>Paid</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>6</td>
+                        <td>Jane Kamau</td>
+                        <td>$7,500</td>
+                        <td>$6,500</td>
+                        <td>$1,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Rent Payments -->
+        <section id="rent" class="app-section">
+            <h2>💰 Rent Payments</h2>
+            <p>Record and manage rent payments.</p>
+        </section>
+
+        <!-- Water Bills -->
+        <section id="water" class="app-section">
+            <h2>💧 Water Bills</h2>
+
+            <p>Water rate: <strong>$120 per unit</strong></p>
+
+            <p>Example: 3 units × $120 = $360</p>
+        </section>
+
+        <!-- Payment Status -->
+        <section id="status" class="app-section">
+            <h2>🔔 Payment Status</h2>
+            <p>Check which tenants have paid, partially paid or have balances.</p>
+        </section>
+
+        <!-- Reports -->
+        <section id="reports" class="app-section">
+            <h2>📊 Reports</h2>
+            <p>View rental and payment reports.</p>
+        </section>
+
+    </main>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
